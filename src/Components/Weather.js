@@ -30,7 +30,7 @@ export const Weather = (props) =>{
                          }
                          let time = i.time.slice(11, 13)
                          if (time % 6 == 0) {
-                             ut += `<tr><td><img src="${images[symbolcodes.indexOf(symbol)]}" /></td> <td>${i.time.slice(0, 10)}</td> <td> ${TimeOfDay[times.indexOf(i.time.slice(11,13))]}</td> <td>${i.data.instant.details.air_temperature} Celcius</td></tr>`;
+                             ut += `<tr><td class='symbol'><img src="${images[symbolcodes.indexOf(symbol)]}" /></td> <td>${i.time.slice(0, 10)}</td> <td> ${TimeOfDay[times.indexOf(i.time.slice(11,13))]}</td> <td>${i.data.instant.details.air_temperature} Celcius</td></tr>`;
                          }
                      }
                      ut += "</table>"
@@ -48,8 +48,11 @@ export const Weather = (props) =>{
                 <City myprop={props}/>
 
             </Row>
-        <div id={'utskrift'}></div>
+            <Row>
 
+        <div  style={{width: "100%", marginLeft: "0"}} id={'utskrift'}></div>
+
+                </Row>
         </Container>
     )
 
