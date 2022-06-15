@@ -13,9 +13,17 @@ function App() {
 
   return (
     <div className="App">
+      <Container fluid>
+        <Row>
       <Header/>
-        <Container fluid>
+        </Row>
+        <Row>
+          <Col sm={3} md={3} lg={3}></Col>
+      </Row>
+        <Row>
         <Search/>
+        </Row>
+
         </Container>
     </div>
   );

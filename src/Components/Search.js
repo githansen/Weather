@@ -27,7 +27,7 @@ export const Search = () =>{
                     setProps(obj)
                 }
             })
-}
+            }
 
         return (
             <div>
