@@ -13,14 +13,11 @@ function App() {
 
   return (
     <div className="App">
+        <Container fluid>
+            <Row>
         <Header/>
-      <Container fluid>
-        <Row>
-
-        </Row>
-        <Row>
-          <Col sm={3} md={3} lg={3}></Col>
-      </Row>
+            </Row>
+            <Row style={{height: "200px", backgroundColor: "green"}}>fs</Row>
         <Row>
         <Search/>
         </Row>
