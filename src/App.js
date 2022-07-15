@@ -17,7 +17,7 @@ function App() {
             <Row>
         <Header/>
             </Row>
-            <Row style={{height: "200px", backgroundColor: "green"}}>fs</Row>
+            <Row style={{height: "50px", backgroundColor: "green"}}>fs</Row>
         <Row>
         <Search/>
         </Row>
